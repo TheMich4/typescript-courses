@@ -21,6 +21,9 @@ module.exports = {
       extends: ['plugin:@typescript-eslint/disable-type-checked'],
       rules: {
         '@typescript-eslint/no-unsafe-assignment': 'off',
+        'prefer-const': 'error',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-params': 'off',
       },
       env: {
         node: true,
@@ -36,7 +39,6 @@ module.exports = {
     ecmaVersion: 'latest',
     project: true,
     tsconfigRootDir: __dirname,
-    sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
   rules: {},
