@@ -7,7 +7,9 @@
   "scripts": {
     "build": "yarn tsc",
     "lint": "yarn eslint src --ext js,ts",
-    "test": "yarn jest"
+    "watch-build": "yarn tsc --watch --preserveWatchOutput",
+    "watch-tests": "yarn jest --watch",
+    "test": "yarn build && yarn jest"
   },
   "volta": {
     "node": "18.18.2",
